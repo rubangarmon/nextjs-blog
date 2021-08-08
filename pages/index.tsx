@@ -5,8 +5,15 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostData } from '../lib/posts'
 import userSwr from 'swr'
+import { GetStaticProps } from 'next'
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData }: {
+  allPostsData: {
+    date: string,
+    title: string,
+    id: string
+  }[]
+}) {
   console.dir(allPostsData)
   // const { data, error } = userSwr('https://reqres.in/api/users/2', fetch)
   // if (error) return <div>failed to load</div>
@@ -46,7 +53,7 @@ export default function Home({ allPostsData }) {
   )
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostData()
   // console.dir(allPostsData)
   return {
