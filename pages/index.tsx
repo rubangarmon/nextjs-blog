@@ -14,7 +14,7 @@ export default function Home({ allPostsData }: {
     id: string
   }[]
 }) {
-  console.dir(allPostsData)
+  // console.dir(allPostsData)
   // const { data, error } = userSwr('https://reqres.in/api/users/2', fetch)
   // if (error) return <div>failed to load</div>
   // if (!data) return <div>loading...</div>

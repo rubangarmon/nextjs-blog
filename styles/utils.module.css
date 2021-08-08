@@ -4,6 +4,8 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    color: #03DAC6;
+    /* color: #BB86FC; */
   }
   
   .headingXl {
@@ -12,12 +14,15 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    color: #03DAC6;
+
   }
   
   .headingLg {
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
+    color: #03DAC6;
   }
   
   .headingMd {
@@ -30,7 +35,8 @@
   }
   
   .colorInherit {
-    color: inherit;
+    /* color: inherit; */
+    color: #03DAC6;
   }
   
   .padding1px {
@@ -48,5 +54,5 @@
   }
   
   .lightText {
-    color: #666;
+    color: rgb(138, 133, 133);
   }
